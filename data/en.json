@@ -1,0 +1,97 @@
+{
+  "name": "Junya Kono",
+  "description": "I am a web engineer, specializing in web client-side architecture / edge-side.\nI am currently working on {{service}} at {{company}}.\nI also write articles, participate in social network services and events, and contribute to the media.",
+  "specialty": [
+    "Web Performance",
+    "Web Client Architecture",
+    "JavaScript / TypeScript",
+    "HTML / CSS",
+    "VCL(Fastly)",
+    "Edge(Fastly / CloudFlare)"
+  ],
+  "sns": [
+    {
+      "label": "Twitter",
+      "id": "konojunya",
+      "link": "https://twitter.com/konojunya"
+    },
+    {
+      "label": "Instagram",
+      "id": "f4b3e2",
+      "link": "https://www.instagram.com/f4b3e2"
+    },
+    {
+      "label": "GitHub",
+      "id": "konojunya",
+      "link": "https://github.com/konojunya"
+    },
+    {
+      "label": "Speaker Deck",
+      "id": "konojunya",
+      "link": "https://speakerdeck.com/konojunya"
+    }
+  ],
+  "company": {
+    "label": "tricot inc.",
+    "link": "https://tricot-inc.com"
+  },
+  "service": {
+    "label": "FUJIMI",
+    "link": "https://fujimi.me"
+  },
+  "activities": [
+    {
+      "date": "2021",
+      "items": [
+        {
+          "label": "Progressive Release by using Fastly",
+          "link": "https://speakerdeck.com/konojunya/progressive-release-by-using-fastly-8a9fc1f5-8730-44f3-8981-986e47498c6d"
+        }
+      ]
+    },
+    {
+      "date": "2020",
+      "items": [
+        {
+          "label": "PWA in WinTicket at PWA Night vol.9",
+          "link": "https://speakerdeck.com/konojunya/winticketniokerupwa-at-pwa-night-vol-dot-9"
+        },
+        {
+          "label": "After the new graduate training",
+          "link": "https://speakerdeck.com/konojunya/xin-zu-yan-xiu-wozhong-ete"
+        }
+      ]
+    },
+    {
+      "date": "2019",
+      "items": [
+        {
+          "label": "PWA in WinTicket at PWA Night vol.9",
+          "link": "https://speakerdeck.com/konojunya/winticketniokerupwa-at-pwa-night-vol-dot-9"
+        },
+        {
+          "label": "After the new graduate training",
+          "link": "https://speakerdeck.com/konojunya/xin-zu-yan-xiu-wozhong-ete"
+        }
+      ]
+    },
+    {
+      "date": "2018",
+      "items": [
+        {
+          "label": "Large-scale web development methods",
+          "link": "https://speakerdeck.com/konojunya/da-gui-mo-nawebfalsekai-fa-shou-fa"
+        }
+      ]
+    },
+    {
+      "date": "2017",
+      "items": [
+        {
+          "label": "My first React",
+          "link": "https://speakerdeck.com/konojunya/chu-metefalsereact"
+        }
+      ]
+    }
+  ]
+}

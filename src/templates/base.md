@@ -17,5 +17,4 @@ Hi! I'm JJ.
 {{sns}}
 
 ## Activity
-
 {{activities}}

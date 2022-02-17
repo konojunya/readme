@@ -16,7 +16,7 @@ pub struct Markdown {
 fn format_activities(activities: &Vec<Activity>) -> String {
     let mut result = String::new();
     for activity in activities {
-        result.push_str(&format!("### {}\n", activity.date));
+        result.push_str(&format!("\n### {}\n", activity.date));
         for item in &activity.items {
             result.push_str(&format!("- [{}]({})\n", item.label, item.link));
         }

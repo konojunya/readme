@@ -6,7 +6,7 @@
     "Web Client Architecture",
     "JavaScript / TypeScript",
     "HTML / CSS",
-    "VCL(Fastly",
+    "VCL(Fastly)",
     "Edge(Fastly / CloudFlare)"
   ],
   "sns": [
@@ -36,16 +36,117 @@
     "link": "https://tricot-inc.com"
   },
   "service": {
-    "label": "FUJIMI株式会社",
+    "label": "FUJIMI",
     "link": "https://fujimi.me"
   },
   "activities": [
     {
+      "date": "2022",
+      "items": [
+        {
+          "label": "[zenn] sourcemap と next-pwa",
+          "link": "https://zenn.dev/jj/articles/next-pwa-with-sourcemap"
+        },
+        {
+          "label": "[zenn scraps] Edge Functions - Vercel についてざっくり理解",
+          "link": "https://zenn.dev/jj/scraps/c3f62783f65b91"
+        },
+        {
+          "label": "[zenn scraps] Next.js 12 をざっくり理解",
+          "link": "https://zenn.dev/jj/scraps/f8a97c4f669397"
+        }
+      ]
+    },
+    {
+      "date": "2021",
+      "items": [
+        {
+          "label": "[zenn book] Fastly Compute@Edge 使い方ガイド",
+          "link": "https://zenn.dev/jj/books/fastly-compute-at-edge-guide"
+        },
+        {
+          "label": "[zenn] Next.jsにおけるenvのベストプラクティス",
+          "link": "https://zenn.dev/jj/articles/next-js-env-best-practice"
+        },
+        {
+          "label": "[zenn scraps] stylelint-pluginを作ってみる会",
+          "link": "https://zenn.dev/jj/scraps/42157938c9eb48"
+        },
+        {
+          "label": "[zenn scraps] WebKitのPrivate Click Measurementの翻訳をして概要を掴む",
+          "link": "https://zenn.dev/jj/scraps/1f4c10accb6c98"
+        },
+        {
+          "label": "[zenn scraps] NeoVimのjob control apiを使ってみる会",
+          "link": "https://zenn.dev/jj/scraps/e2fe98c24c720a"
+        },
+        {
+          "label": "[zenn scraps] NeoVimのPluginを作ってみる①",
+          "link": "https://zenn.dev/jj/scraps/667c49714289a7"
+        },
+        {
+          "label": "[zenn scraps] Fastlyを活用したカナリアリリースを実現したい",
+          "link": "https://zenn.dev/jj/scraps/806cacaa44597f"
+        },
+        {
+          "label": "[speakerdeck] Progressive Release by using Fastly",
+          "link": "https://speakerdeck.com/konojunya/progressive-release-by-using-fastly-8a9fc1f5-8730-44f3-8981-986e47498c6d"
+        }
+      ]
+    },
+    {
+      "date": "2020",
+      "items": [
+        {
+          "label": "[zenn] Preactで作ったコンポーネントをWeb Components として公開する",
+          "link": "https://zenn.dev/jj/articles/preact-web-components"
+        },
+        {
+          "label": "[zenn scraps] Firebase Node.js Client SDKだけでAuthenticateを行いたい",
+          "link": "https://zenn.dev/jj/scraps/8c28ddb257385f"
+        },
+        {
+          "label": "[zenn scraps] Next.jsのSSR/SSG/CSRについて考える",
+          "link": "https://zenn.dev/jj/scraps/e270d446787635"
+        },
+        {
+          "label": "[zenn] Figma plugin with WebAssembly",
+          "link": "https://zenn.dev/jj/articles/figma-plugin-with-wasm"
+        },
+        {
+          "label": "[zenn scraps] Firebase Auth + Next.jsでのユーザー認証",
+          "link": "https://zenn.dev/jj/scraps/0ef0c51a3a62a6"
+        }
+      ]
+    },
+    {
+      "date": "2019",
+      "items": [
+        {
+          "label": "[speakerdeck] WinTicketにおけるPWA at PWA Night vol.9",
+          "link": "https://speakerdeck.com/konojunya/winticketniokerupwa-at-pwa-night-vol-dot-9"
+        },
+        {
+          "label": "[speakerdeck] 新卒研修を終えて",
+          "link": "https://speakerdeck.com/konojunya/xin-zu-yan-xiu-wozhong-ete"
+        }
+      ]
+    },
+    {
       "date": "2018",
       "items": [
         {
-          "label": "Webサイト制作",
-          "link": "https://fujimi.me"
+          "label": "[speakerdeck] 大規模なWebの開発手法",
+          "link": "https://speakerdeck.com/konojunya/da-gui-mo-nawebfalsekai-fa-shou-fa"
+        }
+      ]
+    },
+    {
+      "date": "2017",
+      "items": [
+        {
+          "label": "[speakerdeck] 初めてのReact",
+          "link": "https://speakerdeck.com/konojunya/chu-metefalsereact"
         }
       ]
     }
