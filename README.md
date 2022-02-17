@@ -1,6 +1,6 @@
 # README
 
-**JJ**
+Hi! I'm JJ.
 
 ## Profile
 
