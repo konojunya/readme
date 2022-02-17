@@ -1,0 +1,53 @@
+{
+  "name": "Junya Kono - 河野純也",
+  "description": "Web エンジニアとして Web 全般を本業とし、Web クライアントサイドアーキテクチャ / エッジサイドが得意です。\n現在は {{company}} にて {{service}} の開発に従事しています。\n記事の執筆や SNS、イベントの登壇、メディアなどで情報発信をしています。",
+  "specialty": [
+    "Web Performance",
+    "Web Client Architecture",
+    "JavaScript / TypeScript",
+    "HTML / CSS",
+    "VCL(Fastly",
+    "Edge(Fastly / CloudFlare)"
+  ],
+  "sns": [
+    {
+      "label": "Twitter",
+      "id": "konojunya",
+      "link": "https://twitter.com/konojunya"
+    },
+    {
+      "label": "Instagram",
+      "id": "f4b3e2",
+      "link": "https://www.instagram.com/f4b3e2"
+    },
+    {
+      "label": "GitHub",
+      "id": "konojunya",
+      "link": "https://github.com/konojunya"
+    },
+    {
+      "label": "Speaker Deck",
+      "id": "konojunya",
+      "link": "https://speakerdeck.com/konojunya"
+    }
+  ],
+  "company": {
+    "label": "トリコ株式会社",
+    "link": "https://tricot-inc.com"
+  },
+  "service": {
+    "label": "FUJIMI株式会社",
+    "link": "https://fujimi.me"
+  },
+  "activities": [
+    {
+      "date": "2018",
+      "items": [
+        {
+          "label": "Webサイト制作",
+          "link": "https://fujimi.me"
+        }
+      ]
+    }
+  ]
+}
