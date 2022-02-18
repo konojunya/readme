@@ -1,6 +1,6 @@
 use std::collections::BTreeMap;
 
-use crate::utils::renderer::{Activity, Data, SNS};
+use crate::utils::renderer::{Activity, CareerHistory, Data, SNS};
 use handlebars::Handlebars;
 use serde_derive::Serialize;
 
@@ -10,6 +10,7 @@ pub struct Markdown {
     pub description: String,
     pub specialty: String,
     pub sns: String,
+    pub career_history: String,
     pub activities: String,
 }
 
@@ -48,6 +49,14 @@ fn format_sns(sns: &Vec<SNS>) -> String {
     result
 }
 
+fn format_career_history(career_history: &Vec<CareerHistory>) -> String {
+    let mut result = String::new();
+    for item in career_history {
+        result.push_str(&format!("- {} ({})\n", item.name, item.date,));
+    }
+    result
+}
+
 pub fn format_data(data: &Data) -> Markdown {
     let handlebars = Handlebars::new();
     let mut description = BTreeMap::new();
@@ -68,6 +77,7 @@ pub fn format_data(data: &Data) -> Markdown {
             .expect("cloud not render description"),
         specialty: format_string_vec(&data.specialty),
         sns: format_sns(&data.sns),
+        career_history: format_career_history(&data.career_history),
         activities: format_activities(&data.activities),
     };
 }

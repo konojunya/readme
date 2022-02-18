@@ -35,6 +35,12 @@ pub struct SNS {
 }
 
 #[derive(Deserialize)]
+pub struct CareerHistory {
+    pub name: String,
+    pub date: String,
+}
+
+#[derive(Deserialize)]
 pub struct Data {
     pub name: String,
     pub description: String,
@@ -42,6 +48,7 @@ pub struct Data {
     pub sns: Vec<SNS>,
     pub company: Company,
     pub service: Service,
+    pub career_history: Vec<CareerHistory>,
     pub activities: Vec<Activity>,
 }
 
