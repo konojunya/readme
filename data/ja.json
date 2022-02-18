@@ -87,6 +87,36 @@
       "tag": "OSS",
       "title": "fedidcg/FedCM",
       "link": "https://github.com/fedidcg/FedCM/pull/165"
+    },
+    {
+      "date": 20191016,
+      "tag": "Speaker Deck",
+      "title": "WinTicket における PWA at PWA Night vol.9",
+      "link": "https://speakerdeck.com/konojunya/winticketniokerupwa-at-pwa-night-vol-dot-9"
+    },
+    {
+      "date": 20190513,
+      "tag": "Speaker Deck",
+      "title": "新卒研修を終えて",
+      "link": "https://speakerdeck.com/konojunya/xin-zu-yan-xiu-wozhong-ete"
+    },
+    {
+      "date": 20180529,
+      "tag": "Speaker Deck",
+      "title": "大規模な Web の開発手法",
+      "link": "https://speakerdeck.com/konojunya/da-gui-mo-nawebfalsekai-fa-shou-fa"
+    },
+    {
+      "date": 20170804,
+      "tag": "Speaker Deck",
+      "title": "初めての React",
+      "link": "https://speakerdeck.com/konojunya/chu-metefalsereact"
+    },
+    {
+      "date": 20210823,
+      "tag": "Speaker Deck",
+      "title": "Progressive Release by using Fastly",
+      "link": "https://speakerdeck.com/konojunya/progressive-release-by-using-fastly-8a9fc1f5-8730-44f3-8981-986e47498c6d"
     }
   ]
 }

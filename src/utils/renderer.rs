@@ -57,6 +57,7 @@ pub async fn inject_third_party(data: &Data) -> Data {
     activities.append(&mut zenn);
 
     activities.sort();
+    activities.reverse();
 
     let data = Data{
         name: data.name.clone(),
