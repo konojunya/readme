@@ -4,7 +4,7 @@ use serde_derive::Deserialize;
 
 use super::markdown::format_data;
 
-#[derive(Deserialize, Clone)]
+#[derive(Deserialize, Clone, Eq, Ord, PartialEq, PartialOrd)]
 pub struct Activity {
     pub date: u32,
     pub title: String,
@@ -12,32 +12,32 @@ pub struct Activity {
     pub link: String,
 }
 
-#[derive(Deserialize, Clone)]
+#[derive(Deserialize, Clone, Eq, Ord, PartialEq, PartialOrd)]
 pub struct Company {
     pub label: String,
     pub link: String,
 }
 
-#[derive(Deserialize, Clone)]
+#[derive(Deserialize, Clone, Eq, Ord, PartialEq, PartialOrd)]
 pub struct Service {
     pub label: String,
     pub link: String,
 }
 
-#[derive(Deserialize, Clone)]
+#[derive(Deserialize, Clone, Eq, Ord, PartialEq, PartialOrd)]
 pub struct SNS {
     pub label: String,
     pub id: String,
     pub link: String,
 }
 
-#[derive(Deserialize, Clone)]
+#[derive(Deserialize, Clone, Eq, Ord, PartialEq, PartialOrd)]
 pub struct CareerHistory {
     pub name: String,
     pub date: String,
 }
 
-#[derive(Deserialize, Clone)]
+#[derive(Deserialize, Clone, Eq, Ord, PartialEq, PartialOrd)]
 pub struct Data {
     pub name: String,
     pub description: String,
@@ -49,16 +49,14 @@ pub struct Data {
     pub activities: Vec<Activity>,
 }
 
-pub fn sort_activities(data: &Data) -> &Data {
-    data
-}
-
 pub async fn inject_third_party(data: &Data) -> Data {
     let mut activities = data.activities.clone();
 
     // zenn
     let mut zenn = thirdparty::zenn::get_activities().await;
     activities.append(&mut zenn);
+
+    activities.sort();
 
     let data = Data{
         name: data.name.clone(),

@@ -13,8 +13,7 @@ async fn write_readme(data_file: &str, file_name: &str) {
     let data = serde_json::from_reader(reader).expect("Failed to parse json");
 
     let injected_data = renderer::inject_third_party(&data).await;
-    let activity_sorted_data = renderer::sort_activities(&injected_data);
-    let markdown = utils::renderer::render(&base_markdown, activity_sorted_data);
+    let markdown = utils::renderer::render(&base_markdown, &injected_data);
 
     utils::file::write_file(file_name, &markdown);
 }
