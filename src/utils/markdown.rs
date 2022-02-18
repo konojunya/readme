@@ -20,28 +20,36 @@ fn format_activities(activities: &Vec<Activity>, more: bool) -> String {
     let year = now.year().to_string();
 
     let mut result = String::new();
+    let mut current_year = "".to_string();
     for activity in activities {
         let activity_date = activity.date.to_string();
         let activity_year = &activity_date[..4];
 
-        if more {
-            if activity_year != year {
-                result.push_str(&format!("\n### {}\n", activity_year));
-                result.push_str(&format!(
-                    "- [{}({})]({})\n",
-                    activity.title, activity.tag, activity.link
-                ));
+        // for this year
+        if !more && activity_year == year {
+            if activity_year != &current_year {
+                current_year = activity_year.to_string();
+                result.push_str(&format!("\n### {}\n", current_year));
             }
-        } else {
-            if activity_year == year {
-                result.push_str(&format!("\n### {}\n", activity_year));
-                result.push_str(&format!(
-                    "- [{}({})]({})\n",
-                    activity.title, activity.tag, activity.link
-                ));
+            result.push_str(&format!(
+                "- [{}({})]({})\n",
+                activity.title, activity.tag, activity.link
+            ));
+        }
+
+        // before activity
+        if more && activity_year != year {
+            if activity_year != &current_year {
+                current_year = activity_year.to_string();
+                result.push_str(&format!("\n### {}\n", current_year));
             }
+            result.push_str(&format!(
+                "- [{}({})]({})\n",
+                activity.title, activity.tag, activity.link
+            ));
         }
     }
+
     result
 }
 

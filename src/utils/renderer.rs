@@ -1,9 +1,10 @@
+use crate::thirdparty;
 use handlebars::Handlebars;
 use serde_derive::Deserialize;
 
 use super::markdown::format_data;
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Clone)]
 pub struct Activity {
     pub date: u32,
     pub title: String,
@@ -11,32 +12,32 @@ pub struct Activity {
     pub link: String,
 }
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Clone)]
 pub struct Company {
     pub label: String,
     pub link: String,
 }
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Clone)]
 pub struct Service {
     pub label: String,
     pub link: String,
 }
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Clone)]
 pub struct SNS {
     pub label: String,
     pub id: String,
     pub link: String,
 }
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Clone)]
 pub struct CareerHistory {
     pub name: String,
     pub date: String,
 }
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Clone)]
 pub struct Data {
     pub name: String,
     pub description: String,
@@ -46,6 +47,31 @@ pub struct Data {
     pub service: Service,
     pub career_history: Vec<CareerHistory>,
     pub activities: Vec<Activity>,
+}
+
+pub fn sort_activities(data: &Data) -> &Data {
+    data
+}
+
+pub async fn inject_third_party(data: &Data) -> Data {
+    let mut activities = data.activities.clone();
+
+    // zenn
+    let mut zenn = thirdparty::zenn::get_activities().await;
+    activities.append(&mut zenn);
+
+    let data = Data{
+        name: data.name.clone(),
+        description: data.description.clone(),
+        specialty: data.specialty.clone(),
+        sns: data.sns.clone(),
+        company: data.company.clone(),
+        service: data.service.clone(),
+        career_history: data.career_history.clone(),
+        activities,
+    };
+
+    data
 }
 
 pub fn render(md: &str, data: &Data) -> String {
