@@ -1,5 +1,6 @@
 use std::io::BufReader;
 
+extern crate chrono;
 extern crate handlebars;
 extern crate serde;
 

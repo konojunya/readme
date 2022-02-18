@@ -20,7 +20,10 @@ Hi! I'm JJ.
 
 {{career_history}}
 
-<details>
-<summary><h2>Activity</h2></summary>
+## Activity
 {{activities}}
+
+<details>
+<summary>もっとみる</summary>
+{{more_activities}}
 </details>

@@ -1,8 +1,8 @@
-use std::collections::BTreeMap;
-
 use crate::utils::renderer::{Activity, CareerHistory, Data, SNS};
+use chrono::prelude::*;
 use handlebars::Handlebars;
 use serde_derive::Serialize;
+use std::collections::BTreeMap;
 
 #[derive(Serialize)]
 pub struct Markdown {
@@ -12,14 +12,31 @@ pub struct Markdown {
     pub sns: String,
     pub career_history: String,
     pub activities: String,
+    pub more_activities: String,
 }
 
-fn format_activities(activities: &Vec<Activity>) -> String {
+fn format_activities(activities: &Vec<Activity>, more: bool) -> String {
+    let now = Local::now();
+    let year = now.year().to_string();
+
     let mut result = String::new();
     for activity in activities {
-        result.push_str(&format!("\n### {}\n", activity.date));
-        for item in &activity.items {
-            result.push_str(&format!("- [{}]({})\n", item.label, item.link));
+        if more {
+            if activity.date != year {
+                result.push_str(&format!("\n### {}\n", activity.date));
+
+                for item in &activity.items {
+                    result.push_str(&format!("- [{}]({})\n", item.label, item.link));
+                }
+            }
+        } else {
+            if activity.date == year {
+                result.push_str(&format!("\n### {}\n", activity.date));
+
+                for item in &activity.items {
+                    result.push_str(&format!("- [{}]({})\n", item.label, item.link));
+                }
+            }
         }
     }
     result
@@ -78,6 +95,7 @@ pub fn format_data(data: &Data) -> Markdown {
         specialty: format_string_vec(&data.specialty),
         sns: format_sns(&data.sns),
         career_history: format_career_history(&data.career_history),
-        activities: format_activities(&data.activities),
+        activities: format_activities(&data.activities, false),
+        more_activities: format_activities(&data.activities, true),
     };
 }

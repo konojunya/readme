@@ -42,13 +42,16 @@ Web エンジニアとして Web 全般を本業とし、Web クライアント�
 - 株式会社FarConnection(業務委託) (2015/07 - 2016/10)
 
 
-<details>
-<summary><h2>Activity</h2></summary>
+## Activity
 
 ### 2022
 - [[zenn] sourcemap と next-pwa](https://zenn.dev/jj/articles/next-pwa-with-sourcemap)
 - [[zenn scraps] Edge Functions - Vercel についてざっくり理解](https://zenn.dev/jj/scraps/c3f62783f65b91)
 - [[zenn scraps] Next.js 12 をざっくり理解](https://zenn.dev/jj/scraps/f8a97c4f669397)
+
+
+<details>
+<summary>もっとみる</summary>
 
 ### 2021
 - [[zenn book] Fastly Compute@Edge 使い方ガイド](https://zenn.dev/jj/books/fastly-compute-at-edge-guide)
