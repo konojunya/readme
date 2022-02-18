@@ -18,7 +18,7 @@ async fn format_activities(channel: Channel) -> Vec<Activity> {
 
         activities.push(Activity {
             title: item.title.expect("colud not find title"),
-            tag: "zenn".to_owned(),
+            tag: "Zenn".to_owned(),
             link: item.link.expect("could not find link"),
             date,
         });
