@@ -42,7 +42,8 @@ Web エンジニアとして Web 全般を本業とし、Web クライアント�
 - 株式会社FarConnection(業務委託) (2015/07 - 2016/10)
 
 
-## Activity
+<details>
+<summary>## Activity</summary>
 
 ### 2022
 - [[zenn] sourcemap と next-pwa](https://zenn.dev/jj/articles/next-pwa-with-sourcemap)
@@ -76,3 +77,4 @@ Web エンジニアとして Web 全般を本業とし、Web クライアント�
 ### 2017
 - [[speakerdeck] 初めてのReact](https://speakerdeck.com/konojunya/chu-metefalsereact)
 
+</details>

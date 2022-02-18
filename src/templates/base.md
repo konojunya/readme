@@ -20,5 +20,7 @@ Hi! I'm JJ.
 
 {{career_history}}
 
-## Activity
+<details>
+<summary>## Activity</summary>
 {{activities}}
+</details>
