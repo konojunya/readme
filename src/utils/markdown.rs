@@ -24,6 +24,8 @@ fn format_activities(activities: &Vec<Activity>, more: bool) -> String {
     for activity in activities {
         let activity_date = activity.date.to_string();
         let activity_year = &activity_date[..4];
+        let activity_month = &activity_date[4..6];
+        let activity_day = &activity_date[6..8];
 
         // for this year
         if !more && activity_year == year {
@@ -32,8 +34,13 @@ fn format_activities(activities: &Vec<Activity>, more: bool) -> String {
                 result.push_str(&format!("\n### {}\n", current_year));
             }
             result.push_str(&format!(
-                "- [[{}] {}]({})\n",
-                activity.tag, activity.title, activity.link
+                "- [[{}] {}]({}) : {}/{}/{}\n",
+                activity.tag,
+                activity.title,
+                activity.link,
+                activity_year,
+                activity_month,
+                activity_day
             ));
         }
 
@@ -44,8 +51,13 @@ fn format_activities(activities: &Vec<Activity>, more: bool) -> String {
                 result.push_str(&format!("\n### {}\n", current_year));
             }
             result.push_str(&format!(
-                "- [[{}] {}]({})\n",
-                activity.tag, activity.title, activity.link
+                "- [[{}] {}]({}) : {}/{}/{}\n",
+                activity.tag,
+                activity.title,
+                activity.link,
+                activity_year,
+                activity_month,
+                activity_day
             ));
         }
     }
