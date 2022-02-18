@@ -32,8 +32,8 @@ fn format_activities(activities: &Vec<Activity>, more: bool) -> String {
                 result.push_str(&format!("\n### {}\n", current_year));
             }
             result.push_str(&format!(
-                "- [{}({})]({})\n",
-                activity.title, activity.tag, activity.link
+                "- [[{}] {}]({})\n",
+                activity.tag, activity.title, activity.link
             ));
         }
 
@@ -44,8 +44,8 @@ fn format_activities(activities: &Vec<Activity>, more: bool) -> String {
                 result.push_str(&format!("\n### {}\n", current_year));
             }
             result.push_str(&format!(
-                "- [{}({})]({})\n",
-                activity.title, activity.tag, activity.link
+                "- [[{}] {}]({})\n",
+                activity.tag, activity.title, activity.link
             ));
         }
     }
