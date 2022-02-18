@@ -4,15 +4,11 @@ use serde_derive::Deserialize;
 use super::markdown::format_data;
 
 #[derive(Deserialize)]
-pub struct ActivityItem {
-    pub label: String,
-    pub link: String,
-}
-
-#[derive(Deserialize)]
 pub struct Activity {
-    pub date: String,
-    pub items: Vec<ActivityItem>,
+    pub date: u32,
+    pub title: String,
+    pub tag: String,
+    pub link: String,
 }
 
 #[derive(Deserialize)]

@@ -22,7 +22,6 @@ Hi! I'm JJ.
 
 ## Activity
 {{activities}}
-
 <details>
 <summary>もっとみる</summary>
 {{more_activities}}

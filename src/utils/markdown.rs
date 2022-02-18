@@ -21,21 +21,24 @@ fn format_activities(activities: &Vec<Activity>, more: bool) -> String {
 
     let mut result = String::new();
     for activity in activities {
-        if more {
-            if activity.date != year {
-                result.push_str(&format!("\n### {}\n", activity.date));
+        let activity_date = activity.date.to_string();
+        let activity_year = &activity_date[..4];
 
-                for item in &activity.items {
-                    result.push_str(&format!("- [{}]({})\n", item.label, item.link));
-                }
+        if more {
+            if activity_year != year {
+                result.push_str(&format!("\n### {}\n", activity_year));
+                result.push_str(&format!(
+                    "- [{}({})]({})\n",
+                    activity.title, activity.tag, activity.link
+                ));
             }
         } else {
-            if activity.date == year {
-                result.push_str(&format!("\n### {}\n", activity.date));
-
-                for item in &activity.items {
-                    result.push_str(&format!("- [{}]({})\n", item.label, item.link));
-                }
+            if activity_year == year {
+                result.push_str(&format!("\n### {}\n", activity_year));
+                result.push_str(&format!(
+                    "- [{}({})]({})\n",
+                    activity.title, activity.tag, activity.link
+                ));
             }
         }
     }
