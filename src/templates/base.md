@@ -21,6 +21,6 @@ Hi! I'm JJ.
 {{career_history}}
 
 <details>
-<summary>## Activity</summary>
+<summary><h2>Activity</h2></summary>
 {{activities}}
 </details>

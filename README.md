@@ -43,7 +43,7 @@ Web エンジニアとして Web 全般を本業とし、Web クライアント�
 
 
 <details>
-<summary>## Activity</summary>
+<summary><h2>Activity</h2></summary>
 
 ### 2022
 - [[zenn] sourcemap と next-pwa](https://zenn.dev/jj/articles/next-pwa-with-sourcemap)
