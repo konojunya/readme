@@ -20,5 +20,6 @@ async fn write_readme(data_file: &str, file_name: &str) {
 
 #[tokio::main]
 async fn main() {
-    write_readme("data/ja.json", "README.md").await;
+    thirdparty::github::fetch().await;
+    // write_readme("data/ja.json", "README.md").await;
 }
