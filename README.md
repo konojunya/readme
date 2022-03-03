@@ -28,6 +28,10 @@ Web エンジニアとして Web 全般を本業とし、Web クライアント�
 - Speaker Deck: [@konojunya](https://speakerdeck.com/konojunya)
 
 
+## Donate
+
+0x24941b659992908A74AE345551aD07F1D6E5Fd84
+
 ## CareerHistory
 
 - トリコ株式会社 (2020/11 - 現在)
