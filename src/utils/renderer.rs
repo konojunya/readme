@@ -43,8 +43,6 @@ pub struct Data {
     pub description: String,
     pub specialty: Vec<String>,
     pub sns: Vec<SNS>,
-    pub company: Company,
-    pub service: Service,
     pub career_history: Vec<CareerHistory>,
     pub activities: Vec<Activity>,
 }
@@ -64,8 +62,6 @@ pub async fn inject_third_party(data: &Data) -> Data {
         description: data.description.clone(),
         specialty: data.specialty.clone(),
         sns: data.sns.clone(),
-        company: data.company.clone(),
-        service: data.service.clone(),
         career_history: data.career_history.clone(),
         activities,
     };
