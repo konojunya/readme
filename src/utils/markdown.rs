@@ -1,8 +1,6 @@
 use crate::utils::renderer::{Activity, CareerHistory, Data, SNS};
 use chrono::prelude::*;
-use handlebars::Handlebars;
 use serde_derive::Serialize;
-use std::collections::BTreeMap;
 
 #[derive(Serialize)]
 pub struct Markdown {
@@ -98,23 +96,9 @@ fn format_career_history(career_history: &Vec<CareerHistory>) -> String {
 }
 
 pub fn format_data(data: &Data) -> Markdown {
-    let handlebars = Handlebars::new();
-    let mut description = BTreeMap::new();
-
-    description.insert(
-        "company",
-        format_label_and_link(&data.company.label, &data.company.link),
-    );
-    description.insert(
-        "service",
-        format_label_and_link(&data.service.label, &data.service.link),
-    );
-
     return Markdown {
         name: data.name.clone(),
-        description: handlebars
-            .render_template(&data.description.clone(), &description)
-            .expect("cloud not render description"),
+        description: data.description.clone(),
         specialty: format_string_vec(&data.specialty),
         sns: format_sns(&data.sns),
         career_history: format_career_history(&data.career_history),
