@@ -22,7 +22,7 @@ Web エンジニアとして Web 全般を本業とし、Web クライアント�
 ## SNS
 
 - Twitter: [@konojunya](https://twitter.com/konojunya)
-- Instagram: [@f4b3e2](https://www.instagram.com/f4b3e2)
+- Instagram: [@0x130b8ff](https://www.instagram.com/0x130b8ff)
 - GitHub: [@konojunya](https://github.com/konojunya)
 - Speaker Deck: [@konojunya](https://speakerdeck.com/konojunya)
 
