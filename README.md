@@ -19,12 +19,27 @@ Web エンジニアとして Web 全般を本業とし、Web クライアント�
 - Edge(Fastly / CloudFlare)
 
 
+## What kind of people do you want to work with?
+
+- Web 技術が好きな人
+- 最先端の業界に対してキャッチアップを行い続けている人
+
+
+## Field of interest
+
+- ブラウザ技術の深堀り
+- ネットワーク(TCP/IP)
+- Rust
+- Blockchain
+
+
 ## SNS
 
 - Twitter: [@konojunya](https://twitter.com/konojunya)
 - Instagram: [@0x130b8ff](https://www.instagram.com/0x130b8ff)
 - GitHub: [@konojunya](https://github.com/konojunya)
 - Speaker Deck: [@konojunya](https://speakerdeck.com/konojunya)
+- Zenn: [@jj](https://zenn.dev/jj)
 
 
 ## Donate
@@ -33,6 +48,7 @@ Web エンジニアとして Web 全般を本業とし、Web クライアント�
 
 ## CareerHistory
 
+- microverse株式会社 (2022/07 - now)
 - トリコ株式会社 (2020/11 - 2022/06)
 - 株式会社サイバーエージェント (2019/04 - 2020/10)
 - 株式会社ラブグラフ (2019/03 - 2020/04)
@@ -47,9 +63,11 @@ Web エンジニアとして Web 全般を本業とし、Web クライアント�
 
 ## Activity
 
+
 ### 2022
 - [[OSS] fedidcg/FedCM](https://github.com/fedidcg/FedCM/pull/165) (2022/01/12)
 - [[Zenn] sourcemap と next-pwa](https://zenn.dev/jj/articles/next-pwa-with-sourcemap) (2022/01/05)
+
 
 <details>
 <summary>もっとみる</summary>

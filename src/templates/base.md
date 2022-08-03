@@ -12,6 +12,14 @@ Hi! I'm JJ.
 
 {{specialty}}
 
+## What kind of people do you want to work with?
+
+{{what_kind_of_people_do_you_want_to_work_with}}
+
+## Field of interest
+
+{{field_of_interest}}
+
 ## SNS
 
 {{sns}}
@@ -25,7 +33,9 @@ Hi! I'm JJ.
 {{career_history}}
 
 ## Activity
+
 {{activities}}
+
 <details>
 <summary>もっとみる</summary>
 {{more_activities}}

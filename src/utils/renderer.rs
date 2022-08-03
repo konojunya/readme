@@ -43,6 +43,8 @@ pub struct Data {
     pub description: String,
     pub specialty: Vec<String>,
     pub sns: Vec<SNS>,
+    pub field_of_interest: Vec<String>,
+    pub what_kind_of_people_do_you_want_to_work_with: Vec<String>,
     pub career_history: Vec<CareerHistory>,
     pub activities: Vec<Activity>,
 }
@@ -57,11 +59,15 @@ pub async fn inject_third_party(data: &Data) -> Data {
     activities.sort();
     activities.reverse();
 
-    let data = Data{
+    let data = Data {
         name: data.name.clone(),
         description: data.description.clone(),
         specialty: data.specialty.clone(),
         sns: data.sns.clone(),
+        field_of_interest: data.field_of_interest.clone(),
+        what_kind_of_people_do_you_want_to_work_with: data
+            .what_kind_of_people_do_you_want_to_work_with
+            .clone(),
         career_history: data.career_history.clone(),
         activities,
     };

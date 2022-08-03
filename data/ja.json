@@ -29,9 +29,28 @@
       "label": "Speaker Deck",
       "id": "konojunya",
       "link": "https://speakerdeck.com/konojunya"
+    },
+    {
+      "label": "Zenn",
+      "id": "jj",
+      "link": "https://zenn.dev/jj"
     }
   ],
+  "what_kind_of_people_do_you_want_to_work_with": [
+    "Web 技術が好きな人",
+    "最先端の業界に対してキャッチアップを行い続けている人"
+  ],
+  "field_of_interest": [
+    "ブラウザ技術の深堀り",
+    "ネットワーク(TCP/IP)",
+    "Rust",
+    "Blockchain"
+  ],
   "career_history": [
+    {
+      "name": "microverse株式会社",
+      "date": "2022/07 - now"
+    },
     {
       "name": "トリコ株式会社",
       "date": "2020/11 - 2022/06"
