@@ -8,17 +8,17 @@ Hi! I'm JJ.
 
 {{description}}
 
-## Specialty
+## 得意分野
 
 {{specialty}}
 
-## What kind of people do you want to work with?
-
-{{what_kind_of_people_do_you_want_to_work_with}}
-
-## Field of interest
+## 興味分野
 
 {{field_of_interest}}
+
+## どのような人と働きたいか？
+
+{{what_kind_of_people_do_you_want_to_work_with}}
 
 ## SNS
 

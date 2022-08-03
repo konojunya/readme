@@ -9,7 +9,7 @@ Junya Kono - 河野純也
 Web エンジニアとして Web 全般を本業とし、Web クライアントサイドアーキテクチャ / エッジサイドが得意です。
 記事の執筆や SNS、イベントの登壇、メディアなどで情報発信をしています。
 
-## Specialty
+## 得意分野
 
 - Web Performance
 - Web Client Architecture
@@ -19,18 +19,18 @@ Web エンジニアとして Web 全般を本業とし、Web クライアント�
 - Edge(Fastly / CloudFlare)
 
 
-## What kind of people do you want to work with?
-
-- Web 技術が好きな人
-- 最先端の業界に対してキャッチアップを行い続けている人
-
-
-## Field of interest
+## 興味分野
 
 - ブラウザ技術の深堀り
 - ネットワーク(TCP/IP)
 - Rust
 - Blockchain
+
+
+## どのような人と働きたいか？
+
+- Web 技術が好きな人
+- 最先端の業界に対してキャッチアップを行い続けている人
 
 
 ## SNS
